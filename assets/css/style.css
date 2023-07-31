@@ -1,0 +1,25 @@
+@import url(base/base.css);
+@import url(base/footer.css);
+@import url(base/header.css);
+@import url(base/typo.css);
+@import url(home/hero.css);
+@import url(home/sobre.css);
+@import url(home/cartoes.css);
+
+:root {
+    --font-titulo: "Saira", sans-serif;
+    --font-texto: "Poppins", sans-serif;
+  }
+  
+
+  :root {
+    --cor-body: #222222;
+    --cor-p: #f49336;
+    --cor-s: #f85a40;
+    --cor-t:#775c4c;
+  }
+  
+body{
+    background-color: var(--cor-p);
+    margin: 0 auto;
+}

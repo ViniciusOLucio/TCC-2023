@@ -1,0 +1,33 @@
+#cor-prta{
+  background-color: #0E1013;
+}
+footer{
+  /* display: none; */
+}
+.titulo-footer h2{
+  text-align: left !important;
+  padding:50px;
+  color:#fbfbfb;
+  font-size: 24px;
+  font-family: "Saira";
+font-weight: 700;
+}
+.footer-icons{
+  padding:50px;
+
+float: right;
+  width: 10%;
+  transition: ease .65s;
+}
+.footer-icons a{
+  font-size: 30px;
+  transition: all .65s;
+  margin-left: 25px;
+  color:#fbfbfb
+}
+.footer-icons a:hover{
+  font-size: 35px;
+  color: #ffffff;
+  line-height: 35px;
+  transition: all .65s;
+}
