@@ -17,7 +17,13 @@
   .col-100{
     background-color:var(--cor-t);
     border: 1px solid rgb(72, 0, 255); 
-    width: 100%;
+
+  }
+  .cor-cinza{
+    background-color: #d6d9dd !important;
+  }
+  span {
+    border-bottom:3px solid #f85a40 ;
   }
 .tela-toda{
   height: 100vh;
@@ -25,7 +31,16 @@
 .secao{
   padding: 80px 0;
 }
+.baixo{
+  padding-bottom: 50px;
+}
 /* GRIDS */
+.grid-1{
+  border: 1px solid greenyellow;
+  display: grid;
+  grid-template-columns:  1fr;
+  gap:40px;
+}
 .grid-2{
   border: 1px solid greenyellow;
   display: grid;

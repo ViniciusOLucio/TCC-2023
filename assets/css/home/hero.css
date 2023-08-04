@@ -17,7 +17,13 @@
 }
 
   
-span{
+header nav ul  li span{
+    color: #fbfbfb;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     border-bottom: 2px solid #f85a40 ;
  }
 

@@ -5,6 +5,8 @@
 @import url(home/hero.css);
 @import url(home/sobre.css);
 @import url(home/cartoes.css);
+@import url(home/planos.css);
+
 
 :root {
     --font-titulo: "Saira", sans-serif;
@@ -23,3 +25,4 @@ body{
     background-color: var(--cor-p);
     margin: 0 auto;
 }
+
