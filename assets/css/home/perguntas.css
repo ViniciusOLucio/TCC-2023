@@ -1,0 +1,10 @@
+.pergunta-subtitulo h1{
+    color: black;
+    text-align: left !important;
+font-size: 1.9rem !important;    
+}
+.caixa-pergunta{
+background-color: antiquewhite;
+    border: 2px solid black;
+    margin: 20px 0;
+}

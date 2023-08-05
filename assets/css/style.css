@@ -2,10 +2,12 @@
 @import url(base/footer.css);
 @import url(base/header.css);
 @import url(base/typo.css);
+@import url(base/contato.css);
 @import url(home/hero.css);
 @import url(home/sobre.css);
 @import url(home/cartoes.css);
 @import url(home/planos.css);
+@import url(home/perguntas.css);
 
 
 :root {
@@ -26,3 +28,45 @@ body{
     margin: 0 auto;
 }
 
+/* botao */
+.wrapper{
+
+  top: 50%;
+  left: 50%;
+
+}
+
+.link_wrapper{
+  position: relative;
+}
+
+.botao-apoio a{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+ font-family: var(--font-titulo);
+ font-weight: 800;
+  text-decoration: none;
+  background: var(--cor-s);
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid var(--cor-body);
+  transition: all .35s;
+}
+
+
+
+.botao-apoio a:hover{
+  width: 200px;
+  border: 3px solid var(--cor-body);
+  background: rgb(45, 173, 45);
+  color: black;
+}
+
+.botao-apoio a:hover{
+  border: 3px solid var(--cor-body);
+  right: -25%;
+}

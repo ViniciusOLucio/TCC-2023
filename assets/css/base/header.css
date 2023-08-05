@@ -35,8 +35,8 @@ nav img {
   flex-shrink: 0;
 }
 
-
 header{
+  
   display: flex;
   justify-content: center;
   /* border: 1px solid green; */

@@ -32,7 +32,7 @@
   padding: 80px 0;
 }
 .baixo{
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 /* GRIDS */
 .grid-1{
@@ -51,6 +51,11 @@
   display: grid;
   grid-template-columns:repeat(3,1fr);
   gap:40px;
+}
+.grid-3-coluna{
+  display: grid;
+  grid-template-rows:repeat(3,1fr);
+
 }
 .grid-4{
   display: grid;
