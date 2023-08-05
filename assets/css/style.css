@@ -41,6 +41,8 @@ body{
 }
 
 .botao-apoio a{
+  border-radius: 20px;
+
   display: block;
   width: 250px;
   height: 50px;
@@ -60,7 +62,7 @@ body{
 
 
 .botao-apoio a:hover{
-  width: 200px;
+  width: 300px;
   border: 3px solid var(--cor-body);
   background: rgb(45, 173, 45);
   color: black;
@@ -68,5 +70,9 @@ body{
 
 .botao-apoio a:hover{
   border: 3px solid var(--cor-body);
-  right: -25%;
+
+}
+
+.lado{
+  margin-left: 20%;
 }

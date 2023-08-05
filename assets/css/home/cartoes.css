@@ -19,11 +19,20 @@
 }
 
 /* ÍCONES */
-ion-icon {
+.card-hero ion-icon {
   opacity: 0.6;
   font-size: 60px;
-  transition: .3s;
+
 }
 .card-hero:hover ion-icon{
   opacity: 1;
+  transition: .50s;
+}
+.card-hero h4{
+  font-family: "Saira";
+  font-size: 1.6rem;
+}
+.card-hero:hover{
+  transition: .50s;
+  background-color: var(--cor-body);
 }

@@ -3,7 +3,14 @@
   justify-items: center;
   align-items: center;
 }
-
+.hero-titulo span{
+  
+color: #fbfbfb;
+}
+.apoiadores-logos img{
+  max-height: 90px;
+  max-width: 90px;
+}
  .hero-botao  a:hover{
   box-shadow: inset 500px 0 0 0 black;
   text-decoration:none; 
@@ -13,14 +20,15 @@
   margin: 40px 0 0 80px;
 }
   
-header nav ul  li span{
-    color: #fbfbfb;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    border-bottom: 2px solid #f85a40 ;
+.hero-titulo h1{
+  color: #2b2b2b;
+  text-align: left !important;
+}
+ .titulo-apoiadores h4{
+  color: #2b2b2b;
+  font-size: 2rem;
+  font-family: "Saira";
+  font-weight: 800;
  }
 
 .botoes-caixa a:hover{
@@ -31,8 +39,32 @@ header nav ul  li span{
   max-width: 400px;
 }
 .hero-botao{
+  
   padding-top: 40px;
 }
 .hero-titulo {
   margin-top: 80px;
+}
+.hero-subtitulo p{
+color: #3c3c3c;
+}
+.hero-apoiadores-botao .botao-apoio {
+
+  display: flex;
+  justify-content: center;
+}
+.hero-apoiadores-botao .botao-apoio a {
+  margin-top: 50px;
+ background-color: rgb(74, 74, 242);
+}
+.hero-apoiadores-botao .botao-apoio a:hover{
+  width: 300px;
+  border: 3px solid var(--cor-body);
+  background: rgb(255, 156, 90);
+  color: black;
+}
+
+.botao-apoio a:hover{
+  border: 3px solid var(--cor-body);
+
 }

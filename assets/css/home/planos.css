@@ -1,7 +1,7 @@
 #planos{
     width: 20%;
 }
-.pricing{
+.plano{
     padding: 60px 40px;
     box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
     background: #fff;
@@ -9,7 +9,7 @@
     position: relative;
     border-radius: 15px;
 }
-.pricing h3 {
+.plano h3 {
     font-weight: 600;
     margin-bottom: 15px;
     font-size: 20px;
@@ -17,7 +17,7 @@
     text-align: center;
   }
   
-  .pricing .icon {
+  .plano .icon {
     margin: 30px auto 30px auto;
     width: 70px;
     height: 70px;
@@ -30,14 +30,14 @@
     transform-style: preserve-3d;
   }
   
-  .pricing .icon i {
+  .plano .icon i {
     color: #fff;
     font-size: 28px;
     transition: ease-in-out 0.3s;
     line-height: 0;
   }
   
-  .pricing .icon::before {
+  .plano .icon::before {
     position: absolute;
     content: "";
     height: 86px;
@@ -48,7 +48,7 @@
     transform: translateZ(-1px);
   }
   
-  .pricing .icon::after {
+  .plano .icon::after {
     position: absolute;
     content: "";
     height: 102px;
@@ -59,7 +59,7 @@
     transform: translateZ(-2px);
   }
   
-  .pricing h4 {
+  .plano h4 {
     font-size: 48px;
     color: var(--cor-s);
     font-weight: 700;
@@ -68,70 +68,80 @@
     text-align: center;
   }
   
-  .pricing h4 sup {
+  .plano h4 sup {
     font-family: var(--font-texto);
     font-size: 28px;
   }
   
-  .pricing h4 span {
+  .plano h4 span {
     color: rgba(108, 117, 125, 0.8);
     font-size: 18px;
     font-weight: 400;
     font-family: var(--font-texto);
   }
   
-  .pricing ul {
-    padding: 20px 0;
+  .plano ul {
     list-style: none;
-    color: #6c757d;
-    text-align: left;
-    line-height: 20px;
+    text-align: center;
+    line-height: 30px;
   }
   
-  .pricing ul li {
+  .plano ul li {
     font-family: var(--font-texto);
     padding: 10px 0;
     display: flex;
     align-items: center;
   }
   
-  .pricing ul i {
+  .plano ul i {
     color: #2ea723;
     font-size: 24px;
     padding-right: 3px;
   }
   
-  .pricing ul .na {
+  .plano ul .na {
     color: rgba(108, 117, 125, 0.5);
   }
   
-  .pricing ul .na i {
+  .plano ul .na i {
     color: rgba(108, 117, 125, 0.5);
   }
   
-  .pricing ul .na span {
+  .plano ul .na span {
     text-decoration: line-through;
   }
   
-  .pricing .buy-btn {
-    display: inline-block;
-    padding: 10px 40px;
-    border-radius: 50px;
-    color: var(--cor-p);
-    border: 1px solid #775c4c 0.2;
-    transition: none;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: var(--font-texto);
-    transition: 0.3s;
-  }
-  
-  .pricing .buy-btn:hover {
-    background: var(--cor-p);
-    color: #fff;
-  }
-  
-  .pricing .featured {
+    
+  .plano .apresentou {
     z-index: 10;
     border: 3px solid var(--cor-p);
   }
+  .lista-alimentadores ion-icon{
+    font-size: 1.3rem;
+    }
+    .lista-alimentadores .nao-pago a {
+      color: red;
+      text-decoration: none;
+    }
+    .lista-alimentadores .pago a {
+      color: rgb(90, 252, 90);
+      text-decoration: none;
+    }
+    .lista-alimentadores li{
+      margin-top: 5px;
+    }
+  
+   .lista-alimentadores{
+    font-family: "Saira";
+    font-weight: 800;
+   }
+   .lista-alimentadores .pago a:hover{
+   transition: 1s; 
+   background-color: rgb(90, 252, 90, 0.4);
+   }
+   .lista-alimentadores .nao-pago a:hover{
+    transition: 1s; 
+
+    background-color: rgb(255, 0, 0 ,0.3);
+    
+   }
