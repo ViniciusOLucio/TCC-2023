@@ -15,13 +15,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Saira:wght@400;700&display=swap"
     rel="stylesheet">
 <!-- font awersome -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 <body>
     <!-- HEADER -->
 
     <div class="col-100">
         <header class="container">
-            <nav>
+            <nav id="nav-header">
                 <ul>
                     <li> <span> Forsaken Dogs </span></li>
                     <li><a href="">Home</a></li>
@@ -76,164 +78,110 @@
         </div>
 
     </section>
+    <section class="cards-hero container">
+        <nav>
+            <ul class="grid-4">
+                <li class="card-hero"><a href="">
+                    <ion-icon name="accessibility-outline"></ion-icon>
+                        <h4>Titulo</h4>
+                    </a></li>
+                <!-- 2 -->
+                <li class="card-hero"><a href="">
+                        <img src="./assets/img/cachorros.png" alt="">
+                        <h4>Titulo</h4>
+                    </a></li>
+                <!-- 3 -->
+                <li class="card-hero"><a href="">
+                        <img src="./assets/img/cachorros.png" alt="">
+                        <h4>Titulo</h4>
+                    </a></li>
+                <!-- 4 -->
+                <li class="card-hero"><a href="">
+                    <img src="./assets/img/cachorros.png" alt="">
+                <h4>Titulo</h4>
+                </a></li>
+            </ul>
+        </nav>
+    </section>
     <!-- coluna branca -->
     <div class="col-100 cor-branca grid-1">
         <!-- carotes -->
+
         <!-- 
-        <section id="cartoes" class="container">
 
-
-            <div class="articles">
-                <article>
-                    <div class="article-wrapper">
-                        <figure>
-                            <img src="https://picsum.photos/id/1011/800/450" alt="" />
-                        </figure>
-                        <div class="article-body">
-                            <h2>This is some title</h2>
-                            <p>
-                                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit
-                                amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis
-                                enim imperdiet egestas.
-                            </p>
-                            <a href="#" class="read-more">
-                                Read more <span class="sr-only">about this is some title</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article>
-
-                    <div class="article-wrapper">
-                        <figure>
-                            <img src="https://picsum.photos/id/1005/800/450" alt="" />
-                        </figure>
-                        <div class="article-body">
-                            <h2>This is some title</h2>
-                            <p>
-                                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit
-                                amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis
-                                enim imperdiet egestas.
-                            </p>
-                            <a href="#" class="read-more">
-                                Read more <span class="sr-only">about this is some title</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article>
-
-                    <div class="article-wrapper">
-                        <figure>
-                            <img src="https://picsum.photos/id/103/800/450" alt="" />
-                        </figure>
-                        <div class="article-body">
-                            <h2>This is some title</h2>
-                            <p>
-                                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit
-                                amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis
-                                enim imperdiet egestas.
-                            </p>
-                            <a href="#" class="read-more">
-                                Read more <span class="sr-only">about this is some title</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-        </section>
-    -->
+    
 
 
         <section id="sobre" class="container baixo">
             <!-- caixa 1 -->
-            <div class="sobre-caixa-1">
-                <div class="sobre-titulo">
-                    <h1>Sobre Forsaken Dogs</h1>
-                </div>
-                <div class="sobre-subtitulo">
-                    <p>Forsaken Dogs é um projeto que busca ajudar cães abandonados por meio da tecnologia e da
-                        colaboração de comerciantes locais. A fome e a desnutrição são problemas comuns enfrentados por
-                        cães de rua, e é para resolver essa situação que o projeto foi criado.</p>
-                </div>
+        <div class="sobre-caixa-1">
+            <div class="sobre-titulo">
+                <h1>Sobre Forsaken Dogs</h1>
             </div>
+            <div class="sobre-subtitulo">
+                <p>Forsaken Dogs é um projeto que busca ajudar cães abandonados por meio da tecnologia e da
+                    colaboração de comerciantes locais. A fome e a desnutrição são problemas comuns enfrentados por
+                    cães de rua, e é para resolver essa situação que o projeto foi criado.</p>
+            </div>
+        </div>
 
-            <!-- caixa 2 -->
-            <div class="grid-2">
-                <div class="sobre-caixa-2 cima">
-                    <div class="sobre-imagem">
-                        <img src="assets/img/cachorros.jpeg" alt="" srcset="">
-                    </div>
-                    <div class="sobre-missao">
-                        <div class="sobre-titulo">
-                            <h1>N<span>ossa missã</span>o</h1>
-                        </div>
-                        <div class="sobre-subtitulo">
-                            <p>A missão da Forsaken Dogs é ajudar cães abandonados a terem uma fonte confiável de
-                                alimento e a melhorar sua qualidade de vida. Queremos colaborar com a comunidade local
-                                para enfrentar o problema da fome e desnutrição dos cães de rua, usando a tecnologia
-                                para tornar a solução mais eficiente e econômica.</p>
-                        </div>
-                    </div>
+        <!-- caixa 2 -->
+        <div class="grid-2">
+            <div class="sobre-caixa-2 cima">
+                <div class="sobre-imagem">
+                    <img src="assets/img/cachorros.jpeg" alt="" srcset="">
                 </div>
-                <!-- caixa 3 -->
-                <div class="sobre-caixa-3">
+                <div class="sobre-missao">
                     <div class="sobre-titulo">
-                        <h1>C<span>omo funciona</span>:</h1>
+                        <h1>N<span>ossa missã</span>o</h1>
                     </div>
                     <div class="sobre-subtitulo">
-                        <p>As máquinas de ração automáticas desenvolvidas pela Forsaken Dogs são feitas de canos PVC e
-                            são automatizadas com o uso do Esp32 e sensores de movimento e longitude. Esses sensores
-                            garantem que a ração seja liberada de forma gradual e controlada, evitando o desperdício e
-                            garantindo que todos os cães tenham acesso a uma quantidade adequada de alimento.</p>
-                        <br>
-                        <p>Os comerciantes podem participar do projeto, obtendo as máquinas de ração automáticas através
-                            do nosso site e ajudando a distribuí-las pela cidade. As máquinas são fáceis de instalar e
-                            manter, e quando a ração está acabando, um alerta é enviado para o proprietário do comércio,
-                            para que possa ser reabastecida a tempo.</p>
-                        <br>
+                        <p>A missão da Forsaken Dogs é ajudar cães abandonados a terem uma fonte confiável de
+                            alimento e a melhorar sua qualidade de vida. Queremos colaborar com a comunidade local
+                            para enfrentar o problema da fome e desnutrição dos cães de rua, usando a tecnologia
+                            para tornar a solução mais eficiente e econômica.</p>
                     </div>
+                </div>
+            </div>
+            <!-- caixa 3 -->
+            <div class="sobre-caixa-3">
+                <div class="sobre-titulo">
+                    <h1>C<span>omo funciona</span>:</h1>
+                </div>
+                <div class="sobre-subtitulo">
+                    <p>As máquinas de ração automáticas desenvolvidas pela Forsaken Dogs são feitas de canos PVC e
+                        são automatizadas com o uso do Esp32 e sensores de movimento e longitude. Esses sensores
+                        garantem que a ração seja liberada de forma gradual e controlada, evitando o desperdício e
+                        garantindo que todos os cães tenham acesso a uma quantidade adequada de alimento.</p>
+                    <br>
+                    <p>Os comerciantes podem participar do projeto, obtendo as máquinas de ração automáticas através
+                        do nosso site e ajudando a distribuí-las pela cidade. As máquinas são fáceis de instalar e
+                        manter, e quando a ração está acabando, um alerta é enviado para o proprietário do comércio,
+                        para que possa ser reabastecida a tempo.</p>
+                    <br>
+                </div>
 
-                    <div class="check-list">
-                        <ul>
-                            <li>oi</li>
-                            <li>oi</li>
-                            <li>oi</li>
-                            <li>oi</li>
-                        </ul>
-                    </div>
-                    <div class="botao-apoio">
-                        <div class="wrapper">
-                            <div class="link_wrapper">
-                                <a href="#">Apoie a causa!</a>
+                <div class="check-list">
+                    <ul>
+                        <li>oi</li>
+                        <li>oi</li>
+                        <li>oi</li>
+                        <li>oi</li>
+                    </ul>
+                </div>
+                <div class="botao-apoio">
+                    <div class="wrapper">
+                        <div class="link_wrapper">
+                            <a href="#">Apoie a causa!</a>
 
 
-                            </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
+
+        </div>
         </section>
     </div>
     <div class="col-100 cor-cinza">
@@ -261,58 +209,58 @@
     </section>
 
     </div>
-<div class="col-100 cor-preta">
-    <section id="perguntas-frequentes" class="container grid-2">
+    <div class="col-100 cor-preta">
+        <section id="perguntas-frequentes" class="container grid-2">
 
-        <div class="sobre-titulo">
-            <h1>P<span>erguntas Frequente</span>s</h1>
-            <p>Aqui estão algumas possíveis perguntas frequentes que o projeto 'Forsaken Dogs' pode receber:</p>
-        </div>
+            <div class="sobre-titulo">
+                <h1>P<span>erguntas Frequente</span>s</h1>
+                <p>Aqui estão algumas possíveis perguntas frequentes que o projeto 'Forsaken Dogs' pode receber:</p>
+            </div>
 
 
-        <div class="perguntas cima">
-            <ul class="grid-3-coluna">
-                <!-- PRIMEIRO CARD -->
-                <li>
-                    <div class="caixa-pergunta">
-                        <div class="pergunta-subtitulo">
-                            <h1>
-                                titulo
-                            </h1>
-                        </div>
-                        <div class="pergunta-subtitulo">
-                            <p>Pergunta</p>
-                        </div>
-                </li>
-                <!-- SEGUNDO CARD -->
-                <li>
-                    <div class="caixa-pergunta">
-                        <div class="pergunta-subtitulo">
-                            <h1>
-                                titulo
-                            </h1>
-                        </div>
-                        <div class="pergunta-subtitulo">
-                            <p>Pergunta</p>
-                        </div>
-                </li>
-                <!-- terceior card -->
-                <li>
-                    <div class="caixa-pergunta">
-                        <div class="pergunta-subtitulo">
-                            <h1>
-                                titulo
-                            </h1>
-                        </div>
-                        <div class="pergunta-subtitulo">
-                            <p>Pergunta</p>
-                        </div>
-                </li>
-            </ul>
-        </div>
-        </div>
+            <div class="perguntas cima">
+                <ul class="grid-3-coluna">
+                    <!-- PRIMEIRO CARD -->
+                    <li>
+                        <div class="caixa-pergunta">
+                            <div class="pergunta-subtitulo">
+                                <h1>
+                                    titulo
+                                </h1>
+                            </div>
+                            <div class="pergunta-subtitulo">
+                                <p>Pergunta</p>
+                            </div>
+                    </li>
+                    <!-- SEGUNDO CARD -->
+                    <li>
+                        <div class="caixa-pergunta">
+                            <div class="pergunta-subtitulo">
+                                <h1>
+                                    titulo
+                                </h1>
+                            </div>
+                            <div class="pergunta-subtitulo">
+                                <p>Pergunta</p>
+                            </div>
+                    </li>
+                    <!-- terceior card -->
+                    <li>
+                        <div class="caixa-pergunta">
+                            <div class="pergunta-subtitulo">
+                                <h1>
+                                    titulo
+                                </h1>
+                            </div>
+                            <div class="pergunta-subtitulo">
+                                <p>Pergunta</p>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
     </section>
-</div>
+    </div>
     <!-- FIM DO PERGUNTAS -->
 
     <section id="contato">
@@ -352,7 +300,7 @@
             </div>
         </div>
     </section>
-</div>
+    </div>
 </body>
 
 </html>

@@ -26,7 +26,7 @@
     border-bottom:3px solid #f85a40 ;
   }
 .tela-toda{
-  height: 100vh;
+  /* height: 100vh; */
 }
 .secao{
   padding: 80px 0;
@@ -60,11 +60,12 @@
 .grid-4{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* gap:10px; */
+  gap:40px;
 }
   ul{
     list-style: none !important;
   }
+
   @media screen and (max-width: 960px){
     .container{
 
@@ -81,3 +82,5 @@
       max-width: 100%;
      }
    }
+ 
+  
