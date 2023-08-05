@@ -1,15 +1,16 @@
 
 #hero{
-  height:800px;
+  justify-items: center;
+  align-items: center;
 }
- .hero-botao  a:hover{
 
+ .hero-botao  a:hover{
   box-shadow: inset 500px 0 0 0 black;
   text-decoration:none; 
 }
 .botao-hero{
-  margin-top: 10%;
-  margin-left: 20%;
+  /* TOP - DIREITA - BAIXO - ESQUERDA */
+  margin: 40px 0 0 80px;
 }
   
 header nav ul  li span{
@@ -22,17 +23,16 @@ header nav ul  li span{
     border-bottom: 2px solid #f85a40 ;
  }
 
-
-  .botoes-caixa a:hover{
-    box-shadow: inset 100px 0 0 0 #fbfbfb;
-    text-decoration:none; 
-  }
+.botoes-caixa a:hover{
+  box-shadow: inset 100px 0 0 0 #fbfbfb;
+  text-decoration:none; 
+}
 .hero-img img{
-  max-height: 40%;
+  max-width: 400px;
 }
 .hero-botao{
   padding-top: 40px;
 }
-.hero-subtitulo p{
-
+.hero-titulo {
+  margin-top: 80px;
 }
