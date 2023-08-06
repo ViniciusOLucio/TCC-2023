@@ -1,6 +1,4 @@
-#cor-prta{
-  background-color: #0E1013;
-}
+
 footer{
   /* display: none; */
 }
@@ -13,8 +11,6 @@ footer{
 font-weight: 700;
 }
 .footer-icons{
-  padding:50px;
-
 float: right;
   width: 10%;
   transition: ease .65s;
@@ -30,4 +26,66 @@ float: right;
   color: #ffffff;
   line-height: 35px;
   transition: all .65s;
+}
+.footer-1 h4{
+  font-family: "Saira";
+  font-weight: 800;
+  font-size: 1.7rem;
+}
+.footer-1 h6{
+  font-family: "Saira";
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.footer-1 h6{
+  font-family: "Saira";
+  font-weight: 800;
+
+}
+.footer-1 h6 a {
+  text-decoration: none;
+  color: #000000;
+font-size: 1.2rem;
+}
+.footer-1 h6 a:hover{
+  font-size: 1.2rem;
+  color: #ff0000;
+  transition: all .65s;
+  }
+  .footer-1 p{
+    /* transform: translateY(100%) ; */
+    color: #222222;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+.footer-1 ul li{
+  transform: translateX(-100%);
+
+  margin-right: 30px;
+  font-family: "Saira";
+  font-weight: 800;
+  font-size: 1rem;
+}
+.footer-1 ul li a{
+text-decoration: none;}
+
+.footer-2 ul li{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.footer-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+}
+.footer-3 p{
+  font-size: 1rem;
+}
+.footer-3 h4{
+  font-family: "Saira";
+  font-size: 1.2rem;
 }

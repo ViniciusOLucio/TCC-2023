@@ -35,26 +35,20 @@ color: #fbfbfb;
   box-shadow: inset 100px 0 0 0 #fbfbfb;
   text-decoration:none; 
 }
-.hero-img img{
-  max-width: 400px;
-}
+
 .hero-botao{
   
   padding-top: 40px;
 }
-.hero-titulo {
-  margin-top: 80px;
-}
-.hero-subtitulo p{
-color: #3c3c3c;
-}
+
+
 .hero-apoiadores-botao .botao-apoio {
 
   display: flex;
   justify-content: center;
 }
 .hero-apoiadores-botao .botao-apoio a {
-  margin-top: 50px;
+  margin-top: 120px;
  background-color: rgb(74, 74, 242);
 }
 .hero-apoiadores-botao .botao-apoio a:hover{
