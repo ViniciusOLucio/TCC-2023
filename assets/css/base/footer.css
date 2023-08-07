@@ -45,10 +45,10 @@ float: right;
 .footer-1 h6 a {
   text-decoration: none;
   color: #000000;
-font-size: 1.2rem;
+font-size: 0.8rem;
 }
 .footer-1 h6 a:hover{
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: #ff0000;
   transition: all .65s;
   }
@@ -69,6 +69,13 @@ font-size: 1.2rem;
   font-weight: 800;
   font-size: 1rem;
 }
+.footer-1 a{
+color:#000000;
+}
+.footer-1 a:hover{
+  transition: .65s;
+  color:#ff0000;
+  }
 .footer-1 ul li a{
 text-decoration: none;}
 
@@ -88,4 +95,8 @@ text-decoration: none;}
 .footer-3 h4{
   font-family: "Saira";
   font-size: 1.2rem;
+}
+.footer-2{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }

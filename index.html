@@ -83,28 +83,28 @@
                 <li>
                     <div class="card-hero"><a href="">
                             <ion-icon name="accessibility-outline"></ion-icon>
-                            <h4 style="color:yellow;">Apoie já</h4>
+                            <h4>Apoie já</h4>
                         </a></div>
                 </li>
                 <!-- 2 -->
                 <li>
                     <div class="card-hero"><a href="">
                             <ion-icon name="accessibility-outline"></ion-icon>
-                            <h4 style="color:rgb(92, 239, 255);">Apoiadores</h4>
+                            <h4>Apoiadores</h4>
                         </a></div>
                 </li>
                 <!-- 3 -->
                 <li>
                     <div class="card-hero"><a href="">
                             <ion-icon name="accessibility-outline"></ion-icon>
-                            <h4 style="color:tomato;">Lugares</h4>
+                            <h4>Lugares</h4>
                         </a></div>
                 </li>
                 <!-- 4 -->
                 <li>
                     <div class="card-hero"><a href="">
                             <ion-icon name="accessibility-outline"></ion-icon>
-                            <h4 style="color:greenyellow;">Contato</h4>
+                            <h4>Contato</h4>
                         </a></div>
                 </li>
             </ul>
@@ -171,10 +171,9 @@
 
                     <div class="check-list">
                         <ul>
-                            <li>oi</li>
-                            <li>oi</li>
-                            <li>oi</li>
-                            <li>oi</li>
+                            <li>Ajuda muitos animais com alguns cliques</li>
+                            <li>Economico e sem disperdicios !</li>
+                            <li>Facil acesso</li>
                         </ul>
                     </div>
                     <div class="botao-apoio">
@@ -191,7 +190,48 @@
 
             </div>
         </section>
+
+
+
+
+
+
+
+
+
     </div>
+
+
+
+
+
+    <section id="lugares">
+        <div class="mapa container  baixo">
+            <h1>Pontos de comida</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1622.027902564438!2d-46.756566485552284!3d-22.190938061517638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b6259f8f0794b3%3A0xb9e63fb8d942e740!2sRestaurante%20Forasterios!5e0!3m2!1spt-BR!2sbr!4v1691365710726!5m2!1spt-BR!2sbr"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="col-100 cor-cinza">
         <section id="planos" class="container baixo cima">
             <div class="plano apresentou">
@@ -246,72 +286,102 @@
 
     <!-- FIM DOS LUGARES -->
     <!-- CONTATO -->
+    <div class="col-100 cor-preta">
     <section id="contato" class="container cima baixo">
-   
-        <div class="caixa-contato cima baixo">
-            <div class="titulo-contato">
-                <h1>Entre em contato conosco</h1>
+
+        <div class="screen">
+            <div class="screen-header">
+                <div class="screen-header-left">
+                    <div class="screen-header-button close"></div>
+                    <div class="screen-header-button maximize"></div>
+                    <div class="screen-header-button minimize"></div>
+                </div>
+                <div class="screen-header-right">
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                </div>
             </div>
-            <div class="input-container form-contato">
-                <form method="post">
-                    <!-- nome -->
-                    <input type="text"  id="nome" name="nome" placeholder="Nome:"><br>
-                    <!-- email -->
-                   
-                    <input type="email"  id="email" name="email" placeholder="Email:"><br>
-                    <!-- titulo -->
-                    <input type="text" id="assunto" name="assunto" placeholder="Assunto:"><br>
-                    <!-- mensagem -->
-                    <input type="text" id="mensagem" name="mensagem" placeholder="Mensagem:"><br>
-                    <!-- enviar -->
-                    <input type="submit" class="submit-btn" placeholder="Enviar">
-                </form>
+            <div class="screen-body">
+                <div class="screen-body-item ">
+                    <div class="app-title">
+                        <span>Entre em contato </span>
+                      
+                    </div>
+                    <div class="app-contact">Contato: (19)9 99384-3063</div>
+                </div>
+                <form action=""class="screen-body-item" method="post">
+
+               
+                    <div class="app-form">
+                        <div class="app-form-group">
+                            <input class="app-form-control" placeholder="Nome" name="nome">
+                        </div>
+                        <div class="app-form-group">
+                            <input class="app-form-control" placeholder="Email" name="email">
+                        </div>
+                        <div class="app-form-group">
+                            <input class="app-form-control" placeholder="Assunto" name="assunto">
+                        </div>
+                        <div class="app-form-group message">
+                            <input class="app-form-control" placeholder="Mensagem" name="mensagem">
+                        </div>
+                        <div class="app-form-group buttons">
+              
+                            <input type="submit"class="app-form-button" value="Enviar">
+                        </form>
+                       
+                    </div>
+                </div>
             </div>
-
-
-
-
         </div>
-    </section>
 
+   
+
+    </section>
+</div>
 
     <!-- FOOTER -->
-<div class="col-100 cor-branca" >
-    <footer   class="grid-3 container">
-<div class="footer-1">
-<h4>Forsaken Dogs</h4>
-<ul style="display: flex;">
-    <li><a href="#inicio">inicio</a></li>
-    <li><a href="#ajude">Ajude</a></li>
-    <li><a href="./termosdeuso.html">Termos</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-</ul>
-<p>Forsaken Dogs &copy; 2023</p>
-<!-- <h6><a href="https://www.linkedin.com/in/vinicius-lucio-156004241/">Site Desenvolvido por Vinicius Lucio</a> </h6> -->
-</div>
- <div class="footer-2">
-<ul>
-    <li><i class="fa-solid fa-location-dot"></i>Av Trabalhadores</li>
-    <li><i class="fa-solid fa-phone"></i>(19)99384-3063</li>
-    <li><i class="fa-solid fa-envelope"></i>Forsakendogs@gmail.com</li>
-</ul>
- </div>
-<div class="footer-3">
-<h4>Sobre a companhia</h4>
-<br>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aperiam et distinctio culpa, voluptate adipisci numquam qui error facilis exercitationem ipsam perspiciatis obcaecati, alias quo, consequuntur dolorum quasi perferendis ad.</p>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-</div>
+    <div class="col-100 cor-branca">
+        <footer class="grid-3 container">
+            <div class="footer-1">
+                <h4>Forsaken Dogs</h4>
+                <ul style="display: flex;">
+                    <li><a href="#inicio">inicio</a></li>
+                    <li><a href="#ajude">Ajude</a></li>
+                    <li><a href="./termosdeuso.html">Termos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+                <p>Forsaken Dogs &copy; 2023</p>
+                <h6><a href="https://www.linkedin.com/in/vinicius-lucio-156004241/">Site Desenvolvido por Vinicius
+                        Lucio</a> </h6>
+            </div>
+            <div class="footer-2">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i>Av Trabalhadores</li>
+                    <li><i class="fa-solid fa-phone"></i>(19)99384-3063</li>
+                    <li><i class="fa-solid fa-envelope"></i>Forsakendogs@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <h4>Sobre a companhia</h4>
+
+                <p>Com o projeto Forsaken Dogs, esperamos não apenas fornecer alimentos para cães abandonados, mas
+                    também criar um sistema mais humano de cuidados para esses animais. Acreditamos que todos os cães
+                    merecem amor e cuidado, independentemente de sua condição, e estamos trabalhando para construir uma
+                    comunidade que compartilha essa visão.</p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
 
 
 
 
-    </footer>
-</div>
+        </footer>
+    </div>
 </body>
 
 </html>

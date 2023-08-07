@@ -6,20 +6,21 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0px 20px;
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
   }
   .cima{
     padding-top: 150px;
   }
   .cor-preta{
-    background-color: #e5e5e5;
+    background-color: #e5e5e5 !important;
 }
+
   .cor-branca{
     background-color: whitesmoke !important;
   }
   .col-100{
     background-color:var(--cor-t);
-    border: 1px solid rgb(72, 0, 255); 
+    /* border: 1px solid rgb(72, 0, 255);  */
 
   }
   .cor-cinza{
@@ -37,13 +38,13 @@
 }
 /* GRIDS */
 .grid-1{
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   display: grid;
   grid-template-columns:  1fr;
   gap:40px;
 }
 .grid-2{
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap:40px;
