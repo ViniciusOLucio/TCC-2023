@@ -1,14 +1,19 @@
+/* base */
 @import url(base/base.css);
 @import url(base/footer.css);
 @import url(base/header.css);
 @import url(base/typo.css);
 @import url(base/contato.css);
+/* home */
 @import url(home/hero.css);
 @import url(home/sobre.css);
 @import url(home/cartoes.css);
 @import url(home/planos.css);
 @import url(home/perguntas.css);
-
+@import url(home/alimentadores.css);
+@import url(home/tabela.css);
+/* alimentadores */
+@import url(pasta-alimentadores/alimentadores.css);
 
 :root {
     --font-titulo: "Saira", sans-serif;
@@ -40,6 +45,10 @@ body{
   position: relative;
 }
 
+.botao-apoio{
+  display: flex;
+  justify-content: center;
+}
 .botao-apoio a{
   border-radius: 20px;
 
@@ -62,6 +71,7 @@ body{
 
 
 .botao-apoio a:hover{
+
   width: 300px;
   border: 3px solid var(--cor-body);
   background: rgb(45, 173, 45);
@@ -73,6 +83,3 @@ body{
 
 }
 
-.lado{
-  margin-left: 20%;
-}

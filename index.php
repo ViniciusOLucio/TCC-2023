@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forsaken Dogs</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<!-- font awersome -->
-<script src="https://kit.fontawesome.com/48a96fe751.js" crossorigin="anonymous"></script>
-
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Saira:wght@400;700&display=swap"
-    rel="stylesheet">
-
-<!-- LIB ICONS -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<body>
-    <!-- HEADER -->
-    <div class="col-100">
-        <header class="container">
-            <nav id="nav-header">
-                <ul>
-                    <li> <span> Forsaken Dogs </span></li>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Apoiadores</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Planos</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+<?php
+include_once('header.php');
+?>
 
     <!-- HERO -->
     <section id="hero" class="container grid-2 cima">
@@ -59,13 +24,19 @@
                 <h4>Conheça alguns de nossos apoiadores!</h4>
             </div>
             <div class="apoiadores-logos">
-                <ul class="grid-4">
-                    <li><img src="./assets/img/starbucks-logo-1.png" alt=""></li>
-                    <li><img src="./assets/img/starbucks-logo-1.png" alt=""></li>
-                    <li><img src="./assets/img/starbucks-logo-1.png" alt=""></li>
-                    <li><img src="./assets/img/starbucks-logo-1.png" alt=""></li>
-
-
+            <ul class="grid-4">
+                    <?php
+                    @session_start();
+                    include 'php/conexao.php';
+                    $tb = "SELECT logo FROM usuario WHERE divulgar='S' AND nivel='P' AND ativo='S'";
+                    $resulta = $conexao->query($tb);
+                    if ($resulta->num_rows > 0) {
+                        while ($row = $resulta->fetch_assoc()) {
+                            $foto_logotipo = $row['logo'];
+                            echo "<li><img src='./assets/img/img-usu/{$foto_logotipo}' alt=''></li>";
+                        }
+                    }
+                    ?>
                 </ul>
             </div>
             <div class="hero-apoiadores-botao">
@@ -234,6 +205,15 @@
 
     <div class="col-100 cor-cinza">
         <section id="planos" class="container baixo cima">
+
+
+
+
+        
+ 
+
+
+
             <div class="plano apresentou">
                 <h3>Alimentador</h3>
                 <div class="icon">
@@ -243,25 +223,45 @@
                 <div class="alimentadores-pagos">
                     <h3>Lugares Para ajudar!</h3>
                 </div>
-                <ul class="lista-alimentadores">
 
-                    <li class="nao-pago"><a href="./alimentadores/alimentador.html"> <ion-icon
-                                name="close-outline"></ion-icon> Av. dos Trabalhadores</a></li>
-                    <li class="pago"><a href="./alimentadores/alimentador.html"> <ion-icon
-                                name="checkmark-outline"></ion-icon>Centro</a></li>
-                    <li class="nao-pago"><a href="./alimentadores/alimentador.html"> <ion-icon
-                                name="close-outline"></ion-icon>São Judas</a></li>
-                    <li class="pago"><a href="./alimentadores/alimentador.html"> <ion-icon
-                                name="checkmark-outline"></ion-icon>Rua Barão de Mota Paes</a></li>
-                    <li class="pago"><a href="./alimentadores/alimentador.html"> <ion-icon
-                                name="checkmark-outline"></ion-icon>Av. Washington Luís</a></li>
+                
+                <?php
+                @session_start();
+                include 'php/conexao.php';
 
-                </ul>
-                <div class="botao-apoio lado">
+                $tb = 'SELECT * FROM produto';
+                $resulta = $conexao->query($tb);
+        
+                if ($resulta->num_rows > 0) {
+
+                    while ($row = $resulta->fetch_assoc()) {
+                      
+                            $valor = $row["pago"];
+                            if($valor=='S'){
+                                $color="pago";
+                                $escrita='Pago';
+                              }else{
+                                $escrita='Não Pago';
+                                $color="nao-pago";
+                              }
+                        echo "<ul class='lista-alimentadores'>";
+                   
+                        echo '<li class='.$color.'> <a href="alimentadores/alimentador.php?id='.$row['id'].$row['pago'].'">'.  $row['bairro']  . '&nbsp;-&nbsp;' . $escrita .'</a></li>';  
+                        
+                        echo "</ul>";
+                    }
+                    }
+                
+                ?>
+
+
+
+
+                <div class="botao-apoio">
                     <a href="./alimentadores/index.html">AJUDE AGORA!</a>
                 </div>
             </div>
-    </div><!-- End Pricing Item -->
+    </div>  
 
     </section>
 
@@ -340,6 +340,12 @@
 
     </section>
 </div>
+<<<<<<< HEAD:index.php
+
+<?php
+include_once('footer.php');
+?>
+=======
 
     <!-- FOOTER -->
     <div class="col-100 cor-branca">
@@ -385,3 +391,4 @@
 </body>
 
 </html>
+>>>>>>> d98b08298d7efb4bbfd1d04f2771dc89094bff9b:index.html
