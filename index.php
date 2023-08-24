@@ -340,55 +340,7 @@ include_once('header.php');
 
     </section>
 </div>
-<<<<<<< HEAD:index.php
 
 <?php
 include_once('footer.php');
 ?>
-=======
-
-    <!-- FOOTER -->
-    <div class="col-100 cor-branca">
-        <footer class="grid-3 container">
-            <div class="footer-1">
-                <h4>Forsaken Dogs</h4>
-                <ul style="display: flex;">
-                    <li><a href="#inicio">inicio</a></li>
-                    <li><a href="#ajude">Ajude</a></li>
-                    <li><a href="./termosdeuso.html">Termos</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                </ul>
-                <p>Forsaken Dogs &copy; 2023</p>
-                <h6><a href="https://www.linkedin.com/in/vinicius-lucio-156004241/">Site Desenvolvido por Vinicius
-                        Lucio</a> </h6>
-            </div>
-            <div class="footer-2">
-                <ul>
-                    <li><i class="fa-solid fa-location-dot"></i>Av Trabalhadores</li>
-                    <li><i class="fa-solid fa-phone"></i>(19)99384-3063</li>
-                    <li><i class="fa-solid fa-envelope"></i>Forsakendogs@gmail.com</li>
-                </ul>
-            </div>
-            <div class="footer-3">
-                <h4>Sobre a companhia</h4>
-
-                <p>Com o projeto Forsaken Dogs, esperamos não apenas fornecer alimentos para cães abandonados, mas
-                    também criar um sistema mais humano de cuidados para esses animais. Acreditamos que todos os cães
-                    merecem amor e cuidado, independentemente de sua condição, e estamos trabalhando para construir uma
-                    comunidade que compartilha essa visão.</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-
-
-
-        </footer>
-    </div>
-</body>
-
-</html>
->>>>>>> d98b08298d7efb4bbfd1d04f2771dc89094bff9b:index.html

@@ -2,6 +2,13 @@
 #hero{
   justify-items: center;
   align-items: center;
+  grid-template-columns: 2fr 1fr;
+   h1{
+    color: #2b2b2b;
+    line-height: 120%;
+    font-size: 5rem !important;
+    text-align: left !important;
+  }
 }
 .hero-titulo span{
   
@@ -20,10 +27,7 @@ color: #fbfbfb;
   margin: 40px 0 0 80px;
 }
   
-.hero-titulo h1{
-  color: #2b2b2b;
-  text-align: left !important;
-}
+
  .titulo-apoiadores h4{
   color: #2b2b2b;
   font-size: 2rem;
@@ -61,7 +65,14 @@ color: #fbfbfb;
 .botao-apoio a:hover{
   border: 3px solid var(--cor-body);
 
-}
+} 
+// .botao-apoio{
+//   a{
+//     &:hover{
+//   border: 3px solid var(--cor-body);
+//     }
+//   }
+// }
 .card-hero{
   h4{
   color: tomato;
