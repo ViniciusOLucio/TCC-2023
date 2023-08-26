@@ -30,11 +30,20 @@
 
 <body>
   <!-- HEADER -->
-  <div class="col-100">
-    <header class="container">
-      <nav id="nav-header">
+<section id="topo">
+    <div id="topbar" class="container";>
         <ul>
-          <li> <span> Forsaken Dogs </span></li>
+          <li> <i class="fa-solid fa-envelope"></i> <a href="mailto:contact@example.com"> &nbsp; forsakendogsoficial@gmail.com</a>
+          <li><i class="fa-solid fa-phone"></i>  +55 (19) 99384-3063</li></li>
+        </ul>
+    </div>
+    </section>
+    <header class="container">
+      
+      <nav id="nav-header">
+        
+        <ul>
+        <li> Forsaken Dogs <span>.</span></li>
           <li><a href="">Inicio</a></li>
           <li><a href="">Apoiadores</a></li>
           <li><a href="">Planos</a></li>
@@ -43,4 +52,3 @@
         </ul>
       </nav>
     </header>
-  </div>

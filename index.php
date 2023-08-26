@@ -8,43 +8,15 @@ include_once('header.php');
         <div class="hero-titulo">
             <h1><span> Forsaken Dogs </span><br> uma companhia que está para <span>mudar o mundo!</span></h1>
 
-            <!-- botao hero -->
-            <div class="botao-hero">
-                <!-- <div class="botao-apoio">
-                        <a href="">Apoie a causa</a>
-                    </div> -->
-            </div>
-            <!-- fim do botao -->
-        </div>
-        </div>
+
+           
+            <p>Com o projeto Forsaken Dogs, esperamos não apenas fornecer alimentos para cães abandonados, mas também criar um sistema mais humano de cuidados para esses animais. Acreditamos que todos os cães merecem amor e cuidado, independentemente de sua condição, e estamos trabalhando para construir uma comunidade que compartilha essa visão.</p>
+ 
+     </div>
+        <div class="hero-img"><img src="assets/img/cachorro1.png" alt=""></div>
 
         <!-- HERO IMG -->
-        <div class="hero-apoiadores">
-            <div class="titulo-apoiadores">
-                <h4>Conheça alguns de nossos apoiadores!</h4>
-            </div>
-            <div class="apoiadores-logos">
-            <ul class="grid-4">
-                    <?php
-                    @session_start();
-                    include 'php/conexao.php';
-                    $tb = "SELECT logo FROM usuario WHERE divulgar='S' AND nivel='P' AND ativo='S'";
-                    $resulta = $conexao->query($tb);
-                    if ($resulta->num_rows > 0) {
-                        while ($row = $resulta->fetch_assoc()) {
-                            $foto_logotipo = $row['logo'];
-                            echo "<li><img src='./assets/img/img-usu/{$foto_logotipo}' alt=''></li>";
-                        }
-                    }
-                    ?>
-                </ul>
-            </div>
-            <div class="hero-apoiadores-botao">
-                <div class="botao-apoio">
-                    <a href="">Veja mais</a>
-                </div>
-            </div>
-        </div>
+      
     </section>
 
     <!-- CARDS HERO -->
@@ -162,16 +134,33 @@ include_once('header.php');
             </div>
         </section>
 
-
-
-
-
-
-
-
-
     </div>
-
+    <div class="hero-apoiadores">
+            <div class="titulo-apoiadores">
+                <h4>Conheça alguns de nossos apoiadores!</h4>
+            </div>
+            <div class="apoiadores-logos">
+            <ul class="grid-4">
+                    <?php
+                    @session_start();
+                    include 'php/conexao.php';
+                    $tb = "SELECT logo FROM usuario WHERE divulgar='S' AND nivel='P' AND ativo='S'";
+                    $resulta = $conexao->query($tb);
+                    if ($resulta->num_rows > 0) {
+                        while ($row = $resulta->fetch_assoc()) {
+                            $foto_logotipo = $row['logo'];
+                            echo "<li><img src='./assets/img/img-usu/{$foto_logotipo}' alt=''></li>";
+                        }
+                    }
+                    ?>
+                </ul>
+            </div>
+            <div class="hero-apoiadores-botao">
+                <div class="botao-apoio">
+                    <a href="">Veja mais</a>
+                </div>
+            </div>
+        </div>
 
 
 
