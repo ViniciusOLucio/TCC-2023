@@ -22,9 +22,20 @@ if(isset($_POST['email']) && !empty($_POST['senha']))
 				}
 				else 
 				{
+					while($row = $result->fetch_assoc()) {
+						$nivel =  $row["nivel"];
+						
+					  
+					}
 					$_SESSION['email']=$email;
 					$_SESSION['senha']=$senha;
+					$_SESSION['nivel']=$nivel;
+					if ($nivel == "A")
+					header('Location: ../admin/');
+					
+					else {
 					header('Location: ../usu.php');
+					}
 				}
 				
 

@@ -10,7 +10,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forsaken Dogs</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/scss/main.css">
 </head>
 <!-- font awersome -->
 <script src="https://kit.fontawesome.com/48a96fe751.js" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@ session_start();
                 include("../php/conexao.php");
 
                 $produto = "SELECT foto FROM produto WHERE id='".$_GET['id']."'";
-                $resulta = $conn->query($produto);
+                $resulta = $conexao->query($produto);
                 if ($resulta->num_rows > 0) {
 
                     while ($row = $resulta->fetch_assoc()) {
@@ -53,7 +53,7 @@ session_start();
               <?php  include '../php/conexao.php';
      
                 $produto = "SELECT * FROM produto WHERE id='". $_GET['id']. "'";
-                $resulta = $conn->query($produto);
+                $resulta = $conexao->query($produto);
 
                 if ($resulta->num_rows > 0) {
                  

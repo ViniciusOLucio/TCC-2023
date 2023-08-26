@@ -7,6 +7,9 @@
   padding: 0px 20px;
   /* border: 1px solid red;  */
 }
+.container-01{
+    margin: 0 auto;
+}
 
 .cima {
   padding-top: 150px;
@@ -796,13 +799,13 @@ p {
 }
 
 #tabela {
-  background-color: #555555;
   height: 600px;
   padding: 30px;
 }
 
 table {
   background-color: #8b8b8b;
+
   width: 100%;
   border: 1px solid black;
 }
