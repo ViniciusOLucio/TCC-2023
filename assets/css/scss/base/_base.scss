@@ -5,7 +5,7 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0px 20px;
-    border: 1px solid red; 
+    // border: 1px solid red; 
   }
   .cima{
     padding-top: 150px;
@@ -19,7 +19,7 @@
   }
   .col-100{
     background-color:var(--cor-t);
-    border: 1px solid rgb(72, 0, 255);  
+    // border: 1px solid rgb(72, 0, 255);  
 
   }
   .cor-cinza{
@@ -51,6 +51,11 @@
 .grid-3{
   display: grid;
   grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+.grid-8{
+  display: grid;
+  grid-template-columns:repeat(8,1fr);
   gap:40px;
 }
 .grid-3-coluna{

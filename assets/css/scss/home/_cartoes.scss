@@ -9,7 +9,7 @@
   background-color: var(--cor-t);
   border-radius: 15px;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
 
   transform: translateY(50%);
 }
@@ -19,12 +19,12 @@
 }
 
 /* ÍCONES */
-.card-hero ion-icon {
+.card-hero i {
   opacity: 0.6;
   font-size: 60px;
 
 }
-.card-hero:hover ion-icon{
+.card-hero:hover i{
   opacity: 1;
   transition: .50s;
 }
@@ -34,5 +34,5 @@
 }
 .card-hero:hover{
   transition: .50s;
-  background-color: var(--cor-body);
+  background-color: #302622;
 }
