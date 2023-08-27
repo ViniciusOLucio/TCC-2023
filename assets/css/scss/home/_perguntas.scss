@@ -30,3 +30,35 @@
 .titulo-caixa-p:active  .texto{
     display: block;
   }
+  .caixa-pergunta{
+    border-radius: 15px;
+    background-color: #fbfbfbfa;
+    padding: 20px;
+    border: 1px solid black;
+   margin: 50px;
+   cursor:pointer;
+    .active{
+        color:red;
+    }
+    p{
+
+        font-size: 1.1rem;
+        font-family: "Poppins";
+        
+    }
+    details{
+        .accordion-answer{
+        }
+        summary{
+       
+            font-weight: 800;
+            font-family: "Saira";
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+.accordion-answer{
+
+}
