@@ -1,5 +1,5 @@
     <!-- FOOTER -->
-    <div class="col-100" style="background-color:#d1d5d9;">
+  <div class="footer-principal">
         <footer class="grid-2 container">
         <div class="footer-1">
                 <h4>Forsaken Dogs</h4>
@@ -27,6 +27,7 @@
 
         </footer>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

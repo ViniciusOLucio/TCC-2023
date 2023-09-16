@@ -1,10 +1,11 @@
 #tabela{
-    background-color: #ff0000;
-    height: 20%;
+    background-color: #000000c7;
+	border-radius: 10px;
     padding: 30px;
 }
 table{
-background-color:#fd0000;
+	border-radius: 10px;
+background-color:#f5c67b;
 	width:100%;
 	border:1px solid black;
   }
@@ -17,7 +18,7 @@ background-color:#fd0000;
 	display:flex;
 	width:100%;
 	padding:(2 * 1.5) 0;
-	
+	border-radius: 10px;
 	&:nth-of-type(odd) {
 		background:#EEEEEE;
 	}
@@ -31,6 +32,7 @@ background-color:#fd0000;
 	text-transform:uppercase;
 }
 .table-header {
+	border-radius: 10px;
     font-family: "Saira";
     font-weight: 800;
     font-size: 1.2rem;

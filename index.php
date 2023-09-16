@@ -137,7 +137,7 @@ include_once('header.php');
     </div>
   </section>
 
-</div>
+
 
 
 <section id="apoiadores-h" class="baixo">
@@ -198,30 +198,19 @@ include_once('header.php');
 
 
 
+<div class="bg-planos">
+  <section id="planos" class="container grid-1 ">
 
-<div class="col-100 cor-cinza">
-  <section id="planos" class="container baixo cima">
-
-
-
-
-
-
-
-
-
-    <div class="plano apresentou">
-      <h3>Alimentador</h3>
-      <div class="icon">
-        <i class="fa-solid fa-dog"></i>
-      </div>
-
-      <div class="alimentadores-pagos">
-        <h3>Lugares Para ajudar!</h3>
-      </div>
-
-
-      <?php
+<div class="caixa-planos ">
+  <!-- img plano -->
+<div class="planos-img">
+  <img src="assets/img/002.png" alt="">
+</div>
+<!-- titulo  -->
+<div class="titulo-planos">
+  <h6>Bairros para Apoiar</h6>
+  <div class="lugares-planos">
+<?php
       @session_start();
       include 'php/conexao.php';
 
@@ -232,17 +221,9 @@ include_once('header.php');
 
         while ($row = $resulta->fetch_assoc()) {
 
-          $valor = $row["pago"];
-          if ($valor == 'S') {
-            $color = "pago";
-            $escrita = '<i class="fa-solid fa-check"></i>';
-          } else {
-            $escrita = '<i class="fa-solid fa-xmark"></i>';
-            $color = "nao-pago";
-          }
           echo "<ul class='lista-alimentadores'>";
 
-          echo '<li class=' . $color . '> <a href="alimentadores/alimentador.php?id=' . $row['id'] . $row['pago'] . '">' . $row['bairro'] . '&nbsp;-&nbsp;' . $escrita . '</a></li>';
+          echo '<li> <a href="alimentadores/alimentador.php?id=' . $row['id'] . $row['pago'] . '">' .'- &nbsp;'. $row['bairro'] . '</a></li>';
 
           echo "</ul>";
         }
@@ -250,22 +231,28 @@ include_once('header.php');
 
       ?>
 
-
-
-
-      <div class="botao-apoio">
-        <a href="./alimentadores/index.html">AJUDE AGORA!</a>
-      </div>
-    </div>
 </div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
 
 </section>
-
-
 </div>
+
+
 
 
 <!-- perguntas -->
+<div class="bg-perguntas cima">
 <section id="perguntas-f" class="container grid-2">
   <div class="perguntas-titulo">
     <h4>Perguntas <br> <span>Frequentes</span></h4>
@@ -274,7 +261,7 @@ include_once('header.php');
   <div class="caixas-perguntas">
     <div class="caixa-pergunta">
     <details>
-      <summary>1. Como o projeto 'Forsaken Dogs' garante que as doações em dinheiro serão utilizadas de forma
+      <summary class="summary">1. Como o projeto 'Forsaken Dogs' garante que as doações em dinheiro serão utilizadas de forma
         responsável? </summary>
       <div class="accordion-answer"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio excepturi
         sapiente officiis magni numquam veniam beatae dolores amet, illum explicabo velit tempora error impedit
@@ -284,7 +271,7 @@ include_once('header.php');
     
     <div class="caixa-pergunta">
     <details>
-      <summary> 1. Como o projeto 'Forsaken Dogs' garante que as doações em dinheiro serão utilizadas de forma
+      <summary class="summary"> 1. Como o projeto 'Forsaken Dogs' garante que as doações em dinheiro serão utilizadas de forma
         responsável? </summary>
       <div class="accordion-answer"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio excepturi
         sapiente officiis magni numquam veniam beatae dolores amet, illum explicabo velit tempora error impedit
@@ -294,11 +281,11 @@ include_once('header.php');
     
     <div class="caixa-pergunta">
     <details>
-      <summary> 1. Como o projeto 'Forsaken Dogs' garante que as doações em dinheiro serão utilizadas de forma
+      <summary class="summary"> 1. Como o projeto 'Forsaken Dogs' garante que as doações em dinheiro serão utilizadas de forma
         responsável? </summary>
-      <div class="accordion-answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio excepturi
+      <div class="accordion-answer"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio excepturi
         sapiente officiis magni numquam veniam beatae dolores amet, illum explicabo velit tempora error impedit
-        necessitatibus! Totam aspernatur animi ratione error? </div>
+        necessitatibus! Totam aspernatur animi ratione error? </p></div>
     </details>
     </div>
     
@@ -311,8 +298,8 @@ include_once('header.php');
 
 <!-- FIM DOS LUGARES -->
 <!-- CONTATO -->
-<div class="col-100 cor-preta">
-  <section id="contato" class="container cima baixo">
+
+  <section id="contato" class="container  baixo">
 
     <div class="screen">
       <div class="screen-header">
@@ -360,12 +347,12 @@ include_once('header.php');
     </div>
 </div>
 </div>
-
+</div>
 
 
 </section>
-</div>
 
+</div>
 <?php
 include_once('footer.php');
 ?>

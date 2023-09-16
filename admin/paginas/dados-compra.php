@@ -29,46 +29,36 @@
         <th class="header__item filter__link">Valor</th>
         <th class="header__item filter__link">Tipo</th>
 </tr>
-        <tr class="table-row">
-        <td class="table-data">1</td>
-        <td class="table-data">Fratello</td>
-        <td class="table-data">Felipe Almeida</td>
-        <td class="table-data">20-08-2023</td>
-        <td class="table-data">Jardim das Rosas</td>
-        <td class="table-data">600</td>
-        <td class="table-data">Alimentador</td>
-        </tr>
-    <!--  -->
-    <tr class="table-row">
-    <td class="table-data">2</td>
-    <td class="table-data">Vanila Ice</td>
-    <td class="table-data">Kauane Kelly</td>
-        <td class="table-data">20-08-2023</td>
-        <td class="table-data">Jardim das Rosas</td>
-        <td class="table-data">600</td>
-        <td class="table-data">Alimentador</td>
-        </tr>
-        <!--  -->
-        <tr class="table-row">
-        <td class="table-data">3</td>
-        <td class="table-data">Bocao lanches</td>
-        <td class="table-data">Lucas Rodrigues</td>
-        <td class="table-data">20-08-2023</td>
-        <td class="table-data">Jardim das Rosas</td>
-        <td class="table-data">600</td>
-        <td class="table-data">Alimentador</td>
-        </tr>
-                <!--  -->
-                <tr class="table-row">
-                <td class="table-data">4</td>
-                <td class="table-data">Biazoto</td>
-                <td class="table-data">Jose Eduardo</td>
-        <td class="table-data">20-08-2023</td>
-        <td class="table-data">Jardim das Rosas</td>
-        <td class="table-data">600</td>
-        <td class="table-data">Alimentador</td>
-        </tr>
-    
+        <?php
+        // conexao
+        include '../../php/conexao.php';
+
+        $produto = "SELECT venda.id, venda.`data`, detalhe_venda.valor, produto.bairro, produto.tipo FROM venda 
+                            LEFT OUTER JOIN detalhe_venda ON (venda.id=detalhe_venda.fk_venda_id)
+                            LEFT OUTER JOIN produto ON (detalhe_venda.fk_produto_id=produto.id)
+                            WHERE venda.fk_usuario_id
+                            ORDER BY venda.`data` DESC";
+        
+        $resulta = $conexao->query($produto);        
+        // date_default_timezone_set('America/Sao_Paulo'); // ajusta de hora UTC para Brasil
+
+        if ($resulta->num_rows > 0) {
+            while($row = $resulta->fetch_assoc()) {
+                echo "<tr class='table-row'>";
+                $data = date_create($row['data']);
+                $data = $data->format('d/m/Y');
+                
+                echo "<td class='table-data'>" . $row['id'] . "</td>";
+                echo "<td class='table-data'>" . $data . "</td>";
+                echo "<td class='table-data'>" . $row['bairro'] . "</td>";
+                echo " <td class='table-data'>R$ " . number_format($row['valor'], 2, ',', '.') . "</td>";
+                echo "<td class='table-data'>" . $row['tipo'] . "</td>";
+                echo "</tr>";
+            }
+        }
+        ?>
+    </table>
+
     </table>
     
 
