@@ -18,24 +18,32 @@
   text-decoration: none;
 }
 }
-header nav ul  li span{
- color:  #f85a40 ;
-}
 
-#nav-header ul{
+#nav-header{
 
+  align-items: center;
+  justify-content: space-between;
   display: flex;
-  gap:40px;
+  ul{
+    display: flex;
+    gap:40px;
+  }
   
-    li:nth-child(1) {
+    h6{
+
+      color: #fbfbfb;
       font-family: "Saira";
       font-weight: 800;
       font-size: 30px;
-      margin-right: 40%;
-
-    
+    }
+    span{
+ color:  #f85a40 ;
+      
+    }
   }
-}
+
+
+
 
 #nav-header a {
   opacity: 0.8;
@@ -74,5 +82,4 @@ header nav ul  li span{
     display: flex;
     gap:10px;
   }
- 
-       }
+}

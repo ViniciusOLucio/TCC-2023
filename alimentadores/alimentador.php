@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forsaken Dogs</title>
+    <title>Nutri-Cão</title>
     <link rel="stylesheet" href="../assets/css/scss/main.css">
 </head>
 <!-- font awersome -->
@@ -50,56 +50,55 @@ session_start();
                 ?>
             </div>
                
-              <?php  include '../php/conexao.php';
-     
-                $produto = "SELECT * FROM produto WHERE id='". $_GET['id']. "'";
-                $resulta = $conexao->query($produto);
-
-                if ($resulta->num_rows > 0) {
-                 
-                    while ($row = $resulta->fetch_assoc()) {
-                        $valor = $row["pago"];
-                        if($valor=='S'){
-                            $color="<div class='pago'>";
-                            $escrita='Mês pago por: ';
-                            // adicionar
-                            $nome = 'variavel-nomeusu';
-                            $imagemp = '<img src="../assets/img/icone.png"> ';
-                          }else{
-
-                            $escrita='Não Pago';
-                            $color="<div class='nao-pago'>";
-                            $nome = '';
-                            $imagemp = '';
-                          }
-                          echo "<div class='pg-alimentador-apoiadoreslista'>";
-                        echo $color.'<h5>'  . $row['bairro'] . "&nbsp; &nbsp;".$row['valor']. 'R$ &nbsp; &nbsp;' .$escrita. $nome."&nbsp; &nbsp;" .$imagemp. '</h5> </div>';
-                      
-                      
-                    }
-                }
-               
-                ?>
-               
+            <img src="../assets/img/comedouro.jpg" class="comedouro">
       
-            </div>
         </div>
 
         <!-- caixa esquerda -->
         <div class="pg-alimentadores-caixa-direita">
             <div class="pg-alimentadores-titulo">
-                <h1>Titulo</h1>
+            <?php  include '../php/conexao.php';
+     
+     $produto = "SELECT * FROM produto WHERE id='". $_GET['id']. "'";
+     $resulta = $conexao->query($produto);
+
+     if ($resulta->num_rows > 0) {
+      
+         while ($row = $resulta->fetch_assoc()) {
+          
+              
+             echo'  <h1>'  . $row['bairro'] . '</h1>';
+           
+           
+         }
+     }
+    
+     ?>
             </div>
             <div class="pg-alimentadores-descricao">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia voluptatibus quidem perspiciatis nulla esse eveniet amet dolorum molestias nobis commodi, numquam dignissimos, vitae corporis veniam accusantium ipsa distinctio quo.
+                <p>
+                    Sua doação será contribuida para:
+                    Manutenção, Compra de ração, Higienização alem da construção de novos alimentadores para este bairro, contamos com sua ajuda, qualquer quantia vale !
+
                 </p>
             </div>
             <div class="pg-alimentadores-compra-prod">
-                <h2>Titulo-2</h2>
+                <h2>Doe como:</h2>
+                <div class="cartoes-doacoes" style="display: flex; justify-content: space-around">
 
-
-
-            </div>
+                    <div class="cartao-doacao">
+                        <a href="" style="text-decoration: none;">
+                        <h4>Pix Anônimo</h4>
+                        </a>
+                    </div>
+                    <div class="cartao-doacao " >
+                        <a href="" style="text-decoration: none;">
+                        <h4>Apoiador</h4>
+                        </a>
+                    </div>
+                </div>
+   
+             </div>
 
 
 

@@ -27,33 +27,31 @@
 <body>
 	<!-- main -->
 	<div class="main-w3layouts wrapper">
-		<h1>Criar</h1>
+		<h1>Crie sua conta "Apoiador"</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
 				<form action="enviar.php" method="post">
-					<input class="text" type="text" name="nome" id="nome" placeholder="Nome" required="">
+					<input class="text" type="text" name="nome" id="nome" placeholder="Digite seu Nome" required="">
 					
-					<input class="text email" type="email" name="email" id="email" placeholder="Email" required="">
-
-					<input class="text" type="text" name="telefone" id="telefone" placeholder="Telefone" required=""><br>
-
-					<input class="text" type="text" name="cpf-cnpj" id="cpf-cnpj" placeholder="CPF ou CNPJ" required="">
+					<input class="text email" type="email" name="email" id="email" placeholder="Digite seu Email" required="">
 
 					
+					<input class="text email" type="text" name="telefone" id="telefone" placeholder="Digite seu Telefone" required="">
+
+					<input class="text" type="text" name="cpf_cnpj" id="cpf_cnpj" placeholder="Digite seu CPF ou CNPJ" required="">
+
 					
-
-
+					
 					<input class="text email" type="password" name="senha" id="senha" placeholder="Senha" required="">
-					<input class="text email" type="password" name="conf_senha" id="conf_senha" placeholder="Confirme a Senha" required="">
 	
 				<div class="wthree-text">
+				<div class="wthree-text">
 						<label class="anim">
-							<input type="checkbox" class="checkbox" style="background-color:blue;" required="">
-							<span>Desejo apoiar anonimamente</span>
+							<input type="checkbox" class="checkbox" required="">
+							<span>Autorizo a divulgação no site</span>
 						</label>
 						<div class="clear"> </div>
 					</div>
-					<br>
 					<div class="wthree-text">
 						<label class="anim">
 							<input type="checkbox" class="checkbox" required="">

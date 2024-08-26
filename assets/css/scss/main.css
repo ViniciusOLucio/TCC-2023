@@ -6,13 +6,19 @@
   margin: 0 auto;
   padding: 0px 20px;
 }
+.swiper {
 
+}
 .cima {
   padding-top: 150px;
 }
 
 .cor-branca {
   background-color: whitesmoke !important;
+}
+
+.cor-bl {
+  background-color: #451a03;
 }
 
 .cor-cinza {
@@ -210,19 +216,23 @@ ul {
   text-decoration: none;
 }
 
-header nav ul li span {
-  color: #f85a40;
+#nav-header {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
 }
-
 #nav-header ul {
   display: flex;
   gap: 40px;
 }
-#nav-header ul li:nth-child(1) {
+#nav-header h6 {
+  color: #fbfbfb;
   font-family: "Saira";
   font-weight: 800;
   font-size: 30px;
-  margin-right: 40%;
+}
+#nav-header span {
+  color: #f85a40;
 }
 
 #nav-header a {
@@ -497,6 +507,25 @@ p {
   text-align: left !important;
 }
 
+.hero-a .card-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+  border-radius: 15px;
+  text-align: center;
+  padding: 30px;
+  transform: translateY(0%) !important;
+}
+.hero-a .card-hero img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.hero-a-t span {
+  color: var(--cor-body);
+}
+
 .hero-titulo span {
   color: #fbfbfb;
 }
@@ -540,8 +569,8 @@ button a hover {
 }
 
 .apoiadores-logos img {
-  max-height: 90px;
-  max-width: 90px;
+  height: 90px;
+  width: 100%;
 }
 
 .hero-botao a:hover {
@@ -691,11 +720,6 @@ button a hover {
   justify-content: space-around;
 }
 
-.caixa-planos {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
 .caixa-planos .lugares-planos ul {
   text-align: left; /* Alinha o texto à esquerda */
   margin: 0 auto; /* Centraliza o elemento na horizontal */
@@ -708,13 +732,13 @@ button a hover {
 .caixa-planos .lugares-planos ul li a {
   border-radius: 5px;
   padding: 0px 50px 0px 5px;
-  background-color: rgba(119, 92, 76, 0.7058823529);
+  background-color: rgba(209, 33, 33, 0.7058823529);
   color: #222222;
   text-decoration: none;
   transition: 0.5s;
 }
 .caixa-planos .lugares-planos ul li a:hover {
-  background-color: #f49336;
+  color: white;
 }
 .caixa-planos .planos-img img {
   display: block;
@@ -726,14 +750,180 @@ button a hover {
   font-size: 2.5rem;
 }
 
+.cartao-doacao {
+  display: flex;
+  background-color: var(--cor-s);
+  padding: 0 20px  !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.cartao-doacao a {
+  font-size: 1rem;
+  font-family: "Saira";
+  color: white;
+}
+.cartao-doacao:hover {
+  background-color: rgba(28, 81, 5, 0.78);
+  transition: 0.65s;
+}
+.img-apoiador{
+  margin-bottom: 30px;
+  height: 200px;
+}
+.adic-bairro {
+  margin-bottom: 30px;
+  text-decoration: none;
+  font-family: var(--font-titulo);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+
+
+.fileUpload {
+  position: relative; 
+  overflow: hidden;
+  background-color: white;
+  padding: 10px 20px;
+  font-family: "Poppins";
+  font-weight: 800;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 10px; 
+}
+input.btn-enviar-form-usu{
+background-color: #f85a40;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Poppins";
+font-weight: 800;
+margin: 0 auto;
+border-radius: 10px;
+border: none;
+padding: 10px 20px;
+}
+input.btn-enviar-form-usu:hover{
+  background-color: green;
+color: white;
+
+  transition: .50s;
+
+  }
+.fileUpload input.upload { 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  margin: 0; 
+  padding: 0; 
+  font-size: 20px; 
+  cursor: pointer; 
+  opacity: 0; 
+  filter: alpha(opacity=0); 
+}
+
+input.text{
+  
+  display: flex;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins";
+  padding: 10px 50px;
+  background-color: white;
+}
+
+.formulario-usu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.comedouro{
+  border-radius: 20px;
+  max-height: 700px;
+  width: 100%;
+}
+.adic-bairro:hover {
+  padding: 0px 0px 0px 20px;
+  transition: 0.6s;
+  border-radius: 5px;
+  background-color: rgba(0, 128, 0, 0.807);
+}
+
+.adic-bairro.excluir-bairro:hover {
+  padding: 0px 0px 0px 20px;
+  transition: 0.6s;
+  border-radius: 5px;
+  background-color: rgba(128, 0, 0, 0.807);
+}
+.adic-bairro.excluir-bairro {
+  margin-bottom: 30px;
+  text-decoration: none;
+  font-family: var(--font-titulo);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+
+.cadastro-bairros {
+  font-family: "Saira";
+  font-weight: 800;
+  font-size: 1.25rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cadastro-bairros input {
+  background-color: whitesmoke;
+  font-family: "Saira";
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 10px 5px;
+}
+.cadastro-bairros .submit {
+  border-radius: 5px;
+  border: none;
+  padding: 15px 30px;
+  margin-top: 20px;
+  background-color: rgba(7, 184, 7, 0.72);
+}
+.cadastro-bairros .submit:hover {
+  background-color: green;
+  transition: 0.65s;
+}
+.cadastro-bairros .imginput {
+  padding: 5px 10px;
+}
+.cadastro-bairros .imginput:hover {
+  transition: 0.65s;
+}
+
 #perguntas-f {
   grid-template-columns: 1fr 3fr;
+}
+.swiper-wrapper{
+  padding: 30px;
 }
 
 .perguntas-titulo h4 {
   font-family: "Saira";
   color: #535252;
-  font-size: 1.3rem;
+  font-size: 3rem;
 }
 .perguntas-titulo h4 span {
   color: black;
@@ -742,7 +932,7 @@ button a hover {
 .perguntas-titulo p {
   font-family: "Poppins";
   color: #454545;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .titulo-caixa-p .texto {
@@ -762,7 +952,7 @@ button a hover {
   cursor: pointer;
 }
 .caixa-pergunta .active {
-  color: red;
+  color: var(--cor-s);
 }
 .caixa-pergunta p {
   font-size: 1.1rem;
@@ -773,7 +963,49 @@ button a hover {
   font-family: "Saira";
   font-size: 1.2rem;
 }
+.apoiador-pagina{
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.418);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.apoiador-pagina p{
+  font-family: "Poppins";
+  font-size: 24px;
+  
 
+}
+.cartoes-doacoes{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  height: 50px;
+  gap: 30px;
+}
+.paragrafo-descricao{
+  font-family: "Saira";
+  font-weight: 800;
+  padding-bottom: 50px;
+}
+.paragrafo-apoiador{
+  font-weight: 800;
+  color: var(--cor-s);
+}
+.apoiadores-li {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.655);
+}
+.apoiadores-li:hover{
+background-color: white;
+transition: .65s;
+}
+.apoiadores-li img{
+  height: 300px;
+  max-width: 350px;
+}
 #tabela {
   background-color: rgba(0, 0, 0, 0.7803921569);
   border-radius: 10px;
@@ -847,8 +1079,34 @@ table {
 #paniel-alimentadores {
   margin-top: 5%;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
+.ul-preencha-o-formulario{
+  color: #252525;
+
+font-size: 1.3rem;
+font-family: "Poppins";
+}
+.ul-preencha-o-formulario li{
+   list-style-type: circle;
+  }
+.ul-preencha-o-formulario span{
+  color: #000000;
+
+  font-weight: 800;
+}
+.pg-alimentadores-mapa{
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(56, 44, 44, 0.135);
+
+  background-color: #f6f6f6e9;
+  padding:30px;
+}
+.pg-alimentadores-mapa h1{
+color: black;
+}
+
+
 
 .pg-alimentador-apoiadoreslista {
   height: 300px;
@@ -888,6 +1146,25 @@ table {
 .dropdown {
   position: relative;
   display: inline-block;
+}
+.criar-conta{
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+}
+.btn-criar-conta{
+  border-radius: 20px;
+  font-family: "Saira";
+  font-weight: 800;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: #036025;
+}
+.btn-criar-conta:hover{
+transition: .60s;
+  background-color: #2db45f;
 }
 
 .dropdown-content {

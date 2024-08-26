@@ -4,8 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forsaken Dogs</title>
+  <title>Nutri-Cão</title>
   <link rel="stylesheet" href="assets/css/scss/main.css">
+<!-- swpier -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- font awersome -->
   <script src="https://kit.fontawesome.com/48a96fe751.js" crossorigin="anonymous"></script>
@@ -34,7 +40,7 @@
     <div id="topbar" class="container" ;>
       <ul>
         <li> <i class="fa-solid fa-envelope"></i> <a href="mailto:contact@example.com"> &nbsp;
-            forsakendogsoficial@gmail.com</a>
+            nutricaooficial@gmail.com</a>
         <li><i class="fa-solid fa-phone"></i> +55 (19) 99384-3063</li>
         </li>
       </ul>
@@ -43,13 +49,14 @@
   <header class="container">
 
     <nav id="nav-header">
-
+    <h6> Nutri-Cão <span>.</span></h6>
       <ul>
-        <li> Forsaken Dogs <span>.</span></li>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Apoiadores</a></li>
-        <li><a href="">Planos</a></li>
-        <li><a href="">Contato</a></li>
+      
+        <li><a href="./">Inicio</a></li>
+        <li><a href="./apoiadores.php">Apoiadores</a></li>
+        <li><a href="./doacao-anonima.php">Doe</a></li>
+        <li><a href="./alimentadores.php">Alimentadores</a></li>
+        <li><a href="./#contato">Contato</a></li>
         <li><a href="login/">Entrar</a></li>
       </ul>
     </nav>

@@ -1,5 +1,5 @@
 <?php
-include_once 'header.php';
+include_once('./php/conexao.php');
 if (session_status() != PHP_SESSION_ACTIVE) session_start();
 
 if (!isset($_SESSION['id']) && !isset($_SESSION['email']) && !isset($_SESSION['senha']) && !isset($_SESSION['nivel'])) {
@@ -9,51 +9,54 @@ if (!isset($_SESSION['id']) && !isset($_SESSION['email']) && !isset($_SESSION['s
     exit();
 }
 $id = $_SESSION['id'];
+
+if(@$_GET['pagina'] != ""){
+	$pagina = @$_GET['pagina'];
+}else{
+	$pagina = 'dados-compra';
+}
 ?>
 
-<!-- fim -->
-<!-- tabela -->
-<div class="baixo">
-    <h1> <span style="color:#27272a"> DADOS DE COMPRA </span> </h1>
-</div>
-<section id="tabela" class="container">
-    <table>
-        <tr class="table-header">
-            <th class="header__item filter__link">Data</th>
-            <th class="header__item filter__link">Bairro</th>
-            <th class="header__item filter__link">Valor</th>
-            <th class="header__item filter__link">Tipo</th>
-        </tr>
-        <?php
-        // conexao
-        include 'php/conexao.php';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/scss/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Saira:wght@400;700&display=swap"
+    rel="stylesheet">
+    
+    <title>APOIADOR</title>
+</head>
+<body>
+   
 
-        $produto = "SELECT venda.`data`, detalhe_venda.valor, produto.bairro, produto.tipo FROM venda 
-                            LEFT OUTER JOIN detalhe_venda ON (venda.id=detalhe_venda.fk_venda_id)
-                            LEFT OUTER JOIN produto ON (detalhe_venda.fk_produto_id=produto.id)
-                            WHERE venda.fk_usuario_id={$id}
-                            ORDER BY venda.`data` DESC";
-        
-        $resulta = $conexao->query($produto);        
-        // date_default_timezone_set('America/Sao_Paulo'); // ajusta de hora UTC para Brasil
+    <!-- HEADER -->
+    <div class="col-100">
+        <header class="container">
+            <nav id="nav-header">
+                <h6>Apoiador - Nutri-Cão<span>.</span></h6>
+                <ul>
+                <li><a href="usu.php?pagina=formulario">ENVIAR FORMULARIO</a></li>
+                    <li><a href="usu.php?pagina=dados-compra">Dados de Compra</a></li>
+                    <li> <a href="./login/logout.php">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
-        if ($resulta->num_rows > 0) {
-            while($row = $resulta->fetch_assoc()) {
-                echo "<tr class='table-row'>";
-                $data = date_create($row['data']);
-                $data = $data->format('d/m/Y');
-                echo "<td class='table-data'>" . $data . "</td>";
-                echo "<td class='table-data'>" . $row['bairro'] . "</td>";
-                echo " <td class='table-data'>R$ " . number_format($row['valor'], 2, ',', '.') . "</td>";
-                echo "<td class='table-data'>" . $row['tipo'] . "</td>";
-                echo "</tr>";
-            }
-        }
-        ?>
-    </table>
-    <a href="login/logout.php">sair</a>
-</section>
-<div class="cima baixo"></div>
-<?php
-include_once('footer.php');
-?>
+
+    <section id="home-adm">
+	<?php 
+			require_once('paginas/'.$pagina.'.php');
+			?>
+
+    </section>
+    
+     
+</body>
+</html>

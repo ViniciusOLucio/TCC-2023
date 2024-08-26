@@ -1,51 +1,30 @@
+<?php
+  session_start();
+include_once("../php/conexao.php");
 
- <?php 
-$tabela = 'usuarios';
-require_once("php/conexao.php");
-$nome = $_POST['nome'];
-$senha = $_POST['senha'];
-$conf_senha = $_POST['conf_senha'];
-$email = $_POST['email'];
-$id = $_POST['id'];
-$senha = $_POST['senha'];
-$senha_crip = md5($senha);
+if (isset($_POST['nome'])) {
+    $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
+    $cpf_cnpj = filter_input(INPUT_POST, 'cpf_cnpj', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
+    $telefone = filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_STRING);
+    $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
 
-if($senha != $conf_senha){
-	echo 'As senhas não se coincidem!';
-	exit();
-}
+    $inserir = $pdo->prepare("INSERT INTO usuario(nome_razao, email, senha, cpf_cnpj, ativo, nivel, divulgar) VALUES (:nome, :email, :senha, :cpf_cnpj, 'S', 'U', 'S')");
 
-if($email == ""){
-	echo 'Preencha o Email!';
-	exit();
-}
+    $inserir->bindParam(':nome', $nome, PDO::PARAM_STR, 50);
+    $inserir->bindParam(':email', $email, PDO::PARAM_STR, 50);
+    $inserir->bindParam(':senha', $senha, PDO::PARAM_STR, 50);
+    $inserir->bindParam(':cpf_cnpj', $cpf_cnpj, PDO::PARAM_INT, 50);
+   
 
-//validar email
-if($email != ""){
-	$query = $pdo->query("SELECT * from $tabela where email = '$email'");
-	$res = $query->fetchAll(PDO::FETCH_ASSOC);
-	if(@count($res) > 0 and $id != $res[0]['id']){
-		echo 'Email já Cadastrado, escolha outro!!';
-		exit();
-	}
-}
-
-
-if($id == ""){
-	$query = $pdo->prepare("INSERT into $tabela SET nome = :nome, email = :email, ativo = 'Sim', data = curDate(),  nivel = 'Usuario',  senha = :senha, senha_crip = '$senha_crip'"); 	
-
+    if($inserir->execute()){
+      header("Location: ./");
+    }else{
+        echo"Falha";
+    }   
 }else{
-
-	
+    //Dados Não enviado para o banco de dados
+    $_SESSION ['NãoCadastrado'] = "Cadastro não realizado";
+    header("Location: ./");
 }
-$query->bindValue(":senha", "$senha");
-$query->bindValue(":nome", "$nome");
-$query->bindValue(":email", "$email");
-$query->execute();
-
-
-
-header('location: ./');
-exit();
- ?>
- 
+?>

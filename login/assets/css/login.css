@@ -97,9 +97,10 @@ p {
 }
 #login{
 border-right:1px solid #fff;
-  padding: 0px 22px;
+  padding: 50px 22px;
   width: 59%;
 }
+
 .logo{
 color:#fff;
 font-size:50px;
@@ -158,7 +159,10 @@ fieldset{
 #login > p {
 	text-align: center;
 }
-
+a {
+  font-size: 16px;
+  font-weight: 500;
+}
 #login > p span {
 	padding-left: 5px;
 }
